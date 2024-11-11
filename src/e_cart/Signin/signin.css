@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.sign_cont{
+    width: 100%;
+    padding: 50px 100px 50px 100px;
+    background-color: #f18df8;    
+}
+.signin_page{
+    width: 580px;
+    height: 450px;
+    background-color: white;
+    border-radius: 50px;
+    margin: auto;
+    padding: 40px 60px;
+}
+.signin_page h1{
+    margin: 20px 0;
+}
+.signin_fields{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+}
+.signin_fields input{
+    height: 72px;
+    width: 100%;
+    padding-left: 20px;
+    border: 1px solid #9c9c9c;
+    outline: none;
+    color: #5c5c5c;
+    font-size: 18px;
+}
+.submit_cont{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    width: 500px;
+}
+.sign_cont button{
+    width: 120px;
+    height: 32px;
+    margin-right: 40px;
+    color: white;
+    background-color: #ff4141;
+    border: none;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.sign_cont p{
+    font-size: 24px;
+    font-weight: 600;
+    color: #5c5c5c;
+}
+.sign_cont button:active{
+    background-color: #d67a5e;
+}
+.signin_page p{
+    font-size: 16px;
+    color: #242222;
+    font-weight: 600;
+}
+
+@media (min-width: 100px) and (max-width:700px){
+    .sign_cont {
+        padding: 20px 10px;
+    }
+    
+    .signin_page {
+        width: 90%;
+        height: auto; /* Allow height to adjust */
+        padding: 20px;
+    }
+
+    .signin_fields input {
+        height: 50px; /* Adjust input height for smaller screens */
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .submit_cont {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+        width: 100%;
+    }
+
+    .sign_cont button {
+        width: 100%; /* Full width buttons */
+        margin-right: 0; /* Remove margin */
+        margin-bottom: 10px; /* Add margin between buttons */
+    }
+
+    .signin_page h1 {
+        font-size: 24px; /* Smaller header size */
+        margin: 15px 0;
+    }
+
+    .signin_page p {
+        font-size: 14px; /* Smaller paragraph font size */
+    }
+}
